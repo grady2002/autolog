@@ -1,0 +1,17 @@
+{
+  "name": "autolog",
+  "version": "1.0.0",
+  "description": "speedwall for local drivers",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "author": "Grady",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  }
+}
