@@ -16,10 +16,19 @@ h3 {
   font-size: 2em;
   color: #333;
 }
+.table {
+  margin-top: 3em;
+  white-space: normal;
+  overflow-x: auto;
+  display: flex;
+  position: relative;
+  min-height: 70vh;
+}
 table {
+  position: absolute;
+  top: 0;
   border: 1px solid #333;
   border-collapse: collapse;
-  margin: 1.5em 0;
   width: 100%;
 }
 table * {
@@ -42,4 +51,19 @@ thead * {
 }
 table tbody tr:nth-child(even) {
   background-color: rgb(233, 233, 233);
+}
+
+@media screen and (max-width: 500px) {
+  div {
+    gap: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 8vh;
+  }
+  input {
+    width: 100%;
+  }
+  table {
+    height: 100%;
+  }
 }
