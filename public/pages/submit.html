@@ -10,38 +10,59 @@
   </head>
   <body>
     <h3>Autolog Time Submission Form</h3>
-    <form>
+    <form method="post">
       <div class="first-div">
         <input
           type="text"
           placeholder="Driver Name"
           title="Full name of the driver"
+          class="driver-name"
         />
-        <input type="text" placeholder="Age" title="Age of the driver" />
-        <input type="text" placeholder="Car" title="Car" />
+        <input
+          type="text"
+          placeholder="Age"
+          title="Age of the driver"
+          class="driver-age"
+        />
+        <input type="text" placeholder="Car" title="Car" class="car" />
       </div>
       <div class="second-div">
-        <input type="text" placeholder="RTO" title="Driver's RTO, Ex. MH43" />
-        <input type="text" placeholder="Class" title="Base Horsepower (BHP)" />
+        <input
+          type="text"
+          placeholder="RTO"
+          title="Driver's RTO, Ex. MH43"
+          class="rto"
+        />
+        <input
+          type="text"
+          placeholder="Horsepower"
+          title="Base Horsepower (BHP)"
+          class="vehicle-class"
+        />
       </div>
       <div class="third-div">
         <input
           type="text"
           placeholder="Section Start"
           title="Start signal of the section"
+          class="section-start"
         />
         <input
           type="text"
           placeholder="Section End"
           title="End signal of the section"
+          class="section-end"
         />
         <input
           type="text"
           placeholder="Time"
           title="Total time to comeplete the section (MM:SS)"
+          class="time"
         />
       </div>
       <button type="submit">Submit</button>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="submit.js"></script>
     </form>
   </body>
 </html>
