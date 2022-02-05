@@ -26,7 +26,8 @@ router.get("/speedwall", async (req, res) => {
             await client.connect()
             racer.find({}).toArray((error, result) => {
                 if (!error) {
-                    res.send(result[0])
+                    let data = result
+                    res.status(200).send(data)
                 } else {
                     console.log(error);
                 }

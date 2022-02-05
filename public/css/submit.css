@@ -30,7 +30,8 @@ div {
   display: grid;
   grid-template-columns: 2fr 2fr 0.5fr;
 }
-button {
+button,
+a {
   width: 30%;
   margin: 0 auto;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -43,6 +44,7 @@ button {
   justify-content: center;
   cursor: pointer;
   font-size: 1.2em;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {

@@ -1,4 +1,5 @@
 let form = document.querySelector("form")
+let speedwall = document.querySelector(".wall-button")
 
 const send = (e) => {
     e.preventDefault();
@@ -20,6 +21,7 @@ const send = (e) => {
         if (error) throw error
     })
     form.reset()
+    speedwall.style.display = "grid"
 }
 
 form.addEventListener("submit", send)
